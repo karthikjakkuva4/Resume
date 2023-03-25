@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Edu NSW ACT Foundation', cursive; */
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #fff;
+}
+
+.top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.container .top .img-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .img-box .box {
+    position: relative;
+    width: 70%;
+    /* border: 2px springgreen solid; */
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.container .top .img-box .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profile-text {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .profile-text h3 {
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.container .top .profile-text h3 span {
+    position: relative;
+    font-size: .5em;
+    font-weight: 300;
+    top: -10px;
+}
+
+.container .content-box {
+    position: relative;
+    min-height: 500px;
+    /* border: 2px solid salmon; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+    /* border: 2px solid saddlebrown; */
+}
+
+.container .content-box h3 {
+    border-left: 4px solid #ff8bb3;
+    padding-left: .9em;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container .content-box ul {
+    position: relative;
+    margin: 10px 0;
+}
+
+.container .content-box ul li {
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+
+.container .content-box ul li ion-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #3590d2;
+}
+
+.container .content-box ul.education li {
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: #3590d2;
+}
+
+h4 {
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+h6 {
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.languages {
+    flex-direction: column;
+}
+
+.languages ul li .text {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.languages .percent {
+    position: absolute;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.languages .percent div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+
+.container .content-box ul.interest {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .content-box ul.interest li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.container .content-box ul.interest li .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #3590d2;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-box ul.interest li .icon ion-icon {
+    color: #fff;
+    margin-right: 0;
+}
+
+/* ======================right-side ============= */
+
+p {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.right-side {
+    /* border: 2px solid red; */
+    padding-left: 40px;
+}
+
+.about .box {
+    display: grid;
+    grid-template-columns: 100px 2fr 2fr;
+    /* display: flex;
+    flex-direction: row; */
+    margin: 20px 0;
+    /* border: 2px saddlebrown solid; */
+}
+
+.para {
+    font-style: normal;
+}
+
+.year-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px; */
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* skills-section */
+.skills{
+    /* border: 2px solid red; */
+    height: 150px;
+}
+.boxnth {
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+#btn {
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    border: none;
+    background: green;
+    color: white;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
+#btn:hover {
+    background: rgb(1, 180, 1);
+}
+
+a {
+    text-decoration: none;
+    color: #3590d2;
+}
+
+a:hover {
+    color: #ff8bb3;
+}
+
+.flex {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    justify-content: space-evenly;
+}
+
+.cert {
+    margin: 20px;
+}
+
+.special {
+    padding: .5em 2em;
+    margin: 350px 10px;
+    background: whitesmoke;
+    box-shadow: inset 2px 2px 3px rgba(198, 196, 196, 0.6);
+    border-radius: 10px;
+}
+
+@media (max-width:1300px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        border-left: 1px solid #fff;
+    }
+
+    .top {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .container .top .profile-text h3 {
+        font-size: 2.1rem;
+    }
+
+    .container .top .profile-text h3 span {
+        font-size: .7rem;
+    }
+
+    .container .content-box {
+        grid-template-columns: 1fr;
+        padding:0 4em;
+    }
+
+
+    
+
+    .languages .percent {
+        width: 70%;
+    }
+
+    .languages {
+        width: 80%;
+    }
+    .right-side {
+        padding-left: 0;
+    }
+    .about .box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .img{
+    margin: 20px auto;
+    }
+    .skills{
+        margin-top: 30px;
+        height: 180px;
+    }
+    .special{
+        display: inline-block;
+        margin: 10px;
+    }
+}
